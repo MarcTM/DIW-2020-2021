@@ -3,10 +3,34 @@
     <head>
     	<meta charset="utf-8"/>
         <title>2.2-MARC</title>
+        <meta name="author" content="Marc Torres Martínez">
+        <meta name="copyright" content="Marc Torres Martínez">
+        <meta name="description" content="This is an example of currículum vitae">
+        <meta name="keywords" content="profile, skills, curriculum, vitae, experience, contact, email, php, angular, angularjs, javascript, html, css">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Marc CV">
+		<meta property="og:title" content="Curriculum Vitae" />
+		<meta property="og:url" content="http://www.marctorresmartinez.com/curriculumvitae" />
+		<meta property="og:image" content="http://www.marctorresmartinez.com/wp-content/uploads/cv.jpg" />
+
+		<!-- Twitter-->
+    	<meta name="twitter:card" content="summary_large_image">
+    	<meta name="twitter:description" content="Ejeplo de twitter meta tag">
+    	<meta name="twitter:title" content="Twitter cards meta tag">
+    	<meta name="twitter:site" content="@marct">
+    	<meta name="twitter:image" content="https://www.marc.com/wp-content/uploads/cv.png">
+    	<meta name="twitter:creator" content="@marctorresmartinez">
+
+		<!-- Schema.org-->
+    	<meta itemprop="ratingValue" content="4" />
+    	<meta itemprop="bestRating" content="5" />
+    	<!-- Abajo hay atributos itemprop de ejemplo-->
     </head>
 
     <body>
-        <nav class="navigation">
+        <nav itemprop="navigation" class="navigation">
             <a class="navigation-menu" href="#profile">PROFILE</a>
             <a class="navigation-menu" href="#skills">SKILLS</a>
             <a class="navigation-menu" href="#experience">EXPERIENCE</a>
@@ -14,15 +38,15 @@
         </nav><br>
         
 
-        <div class="profile">
-            <img id="profile" class="profile-img" src="data:image/jpeg;base64,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"/>
-            <h2>MARC TORRES MARTÍNEZ</h2>
-            <p>Web Developer</p>
+        <div itemprop="profile" class="profile">
+            <img itemprop="img" id="profile" class="profile-img" src="data:image/jpeg;base64,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"/>
+            <h2 itemprop="name">MARC TORRES MARTÍNEZ</h2>
+            <p itemprop="description">Web Developer</p>
         </div>
 
         <hr>
 
-        <div class="skills">
+        <div itemprop="skills" class="skills">
             <h1 id="skills">SKILLS</h1>
             <p>-Programming in PHP</p>
             <p>-Programming in JavaScript</p>
@@ -33,16 +57,16 @@
         <hr>
 
         <div class="experience">
-            <h1 id="experience">EXPERIENCE</h1>
+            <h1 itemprop="experience" id="experience">EXPERIENCE</h1>
             <p>No experience yet.</p>
         </div>
 
         <hr>
 
         <div class="contact">
-            <h1 id="contact">CONTACT</h1>
-            <p>Email: marctorresmartinez@gmail.com</p>
-            <p>Phone: 634425810</p>
+            <h1 itemprop="contact" id="contact">CONTACT</h1>
+            <p itemprop="email">Email: marctorresmartinez@gmail.com</p>
+            <p itemprop="phone">Phone: 634425810</p>
         </div>
 
     </body>
