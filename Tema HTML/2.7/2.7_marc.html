@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2.7 MARC</title>
+</head>
+<body>
+
+	<h1>ATRIBUTO "MULTIPLE"</h1>
+	<p>El atributo <b>multiple</b> es un atributo Booleano de los elementos <b>input</b>. Especifica que al usuario le está permitido seleccionar más de un valor que representa un elemento input. El atributo "multiple" funciona con muchos tipos de input, como emails, subir archivos, etc.</p>
+
+	<code><</code>
+	<code>form></code><br>
+
+	<blockquote>
+		<code>Select images:</code><br>
+
+		<code><</code>
+		<code>input type="file" multiple></code>
+		<code><</code>
+		<code>input type="submit"></code><br>
+	</blockquote>
+
+	<code><</code>
+	<code>/</code>
+	<code>form></code>
+	<br><hr><br>
+
+	<form>
+		<label>Select images:</label><br>
+		<input type="file" multiple><br>
+		<input type="submit">
+	</form>
+	<br><hr><br>
+
+	<h1>DATALIST</h1>
+	<p>El tag <b>datalist</b> especifica una lista de opciones predefinidas para un elemento <b>input</b>. Es usado para que el usuario obtenga una lista desplegable que se autocompleta mientras escribe. Si clicas dos veces sobre el input también puedes ver la lista.</p>
+
+	<code><</code>
+	<code>label>Choose your browser from the list:<</code>
+	<code>/label></code><br>
+
+	<code><</code>
+	<code>input list="browsers"></code><br>
+
+	<code><</code>
+	<code>datalist id="browsers"></code><br>
+	<blockquote>
+		<code><</code>	
+		<code>option value="Edge"></code><br>
+		<code><</code>
+		<code>option value="Firefox"></code><br>
+		<code><</code>
+		<code>option value="Chrome"></code><br>
+	</blockquote>
+
+	<code><</code>
+	<code>/datalist></code>
+	<br><hr><br>
+
+	<label>Choose your browser from the list:</label><br>
+	<input list="browsers">
+
+	<datalist id="browsers">
+	  <option value="Edge">
+	  <option value="Firefox">
+	  <option value="Chrome">
+	</datalist>
+	<br><br><hr><br>
+
+	<h1>ATRIBUTO AUTOFOCUS</h1>
+	<p>El atributo <b>autofocus</b> es un atributo booleano. Simplemente especifica que cuando se carga la página, su elemento input estará resaltado (focused).</p>
+
+	<code><</code>
+	<code>form></code><br>
+
+	<blockquote>
+		<code><</code>
+		<code>label>First name<</code>
+		<code>/label></code><br>
+
+		<code><</code>
+		<code>input type="text" autofocus></code><br>
+
+		<code><</code>
+		<code>label>Last name:<</code>
+		<code>/label></code><br>
+
+		<code><</code>
+		<code>input type="text"></code><br>
+
+		<code><</code>
+		<code>input type="submit"></code><br>
+	</blockquote>
+	
+	<code><</code>
+	<code>/form></code>
+	<br><hr><br>
+
+	<form>
+		<label>First name:</label><br>
+		<input type="text" autofocus><br>
+		<label>Last name:</label><br>
+		<input type="text">
+	</form>
+	<br><hr>
+
+</body>
+</html>
