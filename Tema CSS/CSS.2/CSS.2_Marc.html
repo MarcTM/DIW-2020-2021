@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8" />
+<title>CSS.2 - MARC</title>
+</head>
+<body>
+	<h1 style="color: brown">CSS.2-MARC</h1>
+	<h1>PRIMERA FORMA</h1>
+	<p>La primera forma simplemente es poner el estilo CSS en la etiqueta <b>style</b> del <b>head</b> del mismo index.html</p>
+	<img src="./primera.png">
+	<hr>
+
+	<h1>SEGUNDA FORMA</h1>
+	<p>La segunda forma es añadir el CSS en un fichero externo. Se añade en la etiqueta <b>link</b> en el <b>head</b>, con su atributo href para indicar en qué archivo se encuentra el CSS.</p>
+	<h2>Fichero HTML</h2>
+	<img src="./segunda.png"><br>
+	<h2>Fichero CSS (act.css)</h2>
+	<img src="./segunda2.png">
+	<hr>
+
+	<h1>TERCERA FORMA</h1>
+	<p>Agregar el atributo <b>style</b> en cada elemento al que quieres poner CSS, con las reglas de estilo que quieras para ese elemento.</p>
+	<img src="./tercera.png">
+	<hr>
+
+	<h1>CUARTA FORMA</h1>
+	<p>Usariamos la segunda forma que he puesto antes, pero ahora en el archivo CSS principal que estamos gastando, podemos importar otros archivos CSS, usando una ruta realativa a éste.</p><br>
+	<p>Primero declarariamos el fichero CSS en el html:</p>
+	<img src="./cuarta.png"><br>
+	<p>Y suponiendo que tenemos mitad CSS en act.css y otra mitad en act_2.css, el primero importa al segundo:</p>
+	<h2>(act.css)</h2>
+	<img src="./cuarta2.png"><br>
+	<h2>(act_2.css)</h2>
+	<img src="./cuarta3.png">
+	<hr>
+
+	<h1>QUINTA FORMA</h1>
+	<p>Esta forma se usa para inyectar CSS con javascript. Ya que es muy larga, voy a poner un ejemplo sencillo sobre este ejercicio:</p>
+	<img src="./quinta.png">
+	<p>De esta forma pondria a los elementos con el id "primero" con color de fondo amarillo.</p>
+	
+
+</body>
+</html>
