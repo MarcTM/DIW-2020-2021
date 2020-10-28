@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS.7-MARC</title>
+  <style type="text/css">
+    div{
+      position: absolute;
+      border: solid black 3px;
+      padding: 5px;
+    }
+
+    div.casa{
+      height: 250px;
+      width: 300px;
+      background-color: grey;
+      top:100px;
+      left:150px;
+    }
+    div.tejado{
+      bottom: 260px;
+      left: -17px;
+      height: 15px;
+      width: 330px;
+      background-color: purple;
+    }
+    div.xumenera{
+    	left: 40px;
+    	top: -78px;
+    	height: 40px;
+    	width: 25px;
+    	background-color: brown;
+    }
+    div.puerta{
+      left: 120px;
+      top: 167px;
+      height: 80px;
+      width: 50px;
+      background-color: brown;
+    }
+    .ventana{
+    	height: 30px;
+    	width: 30px;
+    	background-color: green;
+    }
+    .ventana__abajoizquieda{
+    	top: 167px;
+    	left: 33px;
+    }
+    .ventana__arribaizquierda{
+    	top: 30px;
+    	left: 33px;
+    }
+    .ventana__arribaderecha{
+    	top: 30px;
+    	left: 222px;
+    	
+    }
+    .ventana__abajoderecha{
+    	top: 167px;
+    	left: 222px;
+    }
+    .pany{
+      top: 40px;
+      border:0px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="h1" class="casa">
+  	<div class="xumenera"></div>
+    <div class="tejado"></div>
+    <div class="ventana ventana__abajoizquieda"></div>
+    <div class="ventana ventana__arribaizquierda"></div>
+    <div class="ventana ventana__arribaderecha"></div>
+    <div class="ventana ventana__abajoderecha"></div>
+    <div class="puerta"><div class="pany">º</div></div>
+  </div>
+</body>
+</html>
+<!--
+<div id="h1" class="casa">
+   <div class="tejado" />
+   <div class="puerta"><h1>door</h1></div>
+   <div class="ventana1"></div>
+   <div class="ventana2"></div>
+</div>
+-->
