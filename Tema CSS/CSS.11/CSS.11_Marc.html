@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>clear _____?</title>
   <style media="screen">
+  	:root{
+  		--10so: 10px solid orange;
+  		--rgba: rgba(255,244,219,.6);
+  		--border: solid 10px #ffc129;
+  	}
     *{
       box-sizing: border-box;
     }
@@ -27,19 +32,19 @@
       line-height: normal;
     }
     .floated-1{
-      border: solid 10px #ffc129;
-      background-color: rgba(255,244,219,.6);
+      border: var(--border);
+      background-color: var(--rgba);
       padding: 1em;
     }
     .floated-2{
-      border: solid 10px #ffc129;
-      background-color: rgba(255,244,219,.6);
+      border: var(--border);
+      background-color: var(--rgba);
       padding: 1em;
       height: 120px;
     }
 
     .reliquit{
-    	border: 10px solid orange;
+    	border: var(--10so);
     	width: 100px;
     	height: 70px;
     	text-align: center;
@@ -49,7 +54,7 @@
     }
     .ius{
     	margin: 5px;
-    	border: 10px solid orange;
+    	border: var(--10so);
     	width: 75px;
     	height: 125px;
     	padding: 15px;
