@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>GRID.04 - MARC</title>
+
+    <style type="text/css">
+        body {
+            font-weight: bold;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 1fr 5fr 1fr;
+            grid-template-areas: "header header header" "main main main" "footer footer footer";
+        }
+        
+        .header {
+            grid-area: header;
+            background-color: pink;
+        }
+        
+        .main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "aside_left section aside_right";
+        }
+        
+        .aside {
+            background-color: blue;
+        }
+        
+        .aside__left {
+            grid-area: aside_left;
+        }
+        
+        .aside__right {
+            grid-area: aside_right;
+        }
+        
+        .section {
+            grid-area: section;
+            background-color: green;
+        }
+        
+        .footer {
+            grid-area: footer;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">HEADER</header>
+
+    <main class="main">
+        <aside class="aside aside__left">LEFT ASIDE</aside>
+        <section class="section">SECTION</section>
+        <aside class="aside aside__right">RIGHT ASIDE</aside>
+    </main>
+
+    <footer class="footer">FOOTER</footer>
+</body>
+
+</html>
