@@ -1,0 +1,169 @@
+<html>
+<header>
+    <meta charset="utf-8">
+    <title>GRID KITT - MARC</title>
+    <style>
+        body {
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+            background-color: black;
+            display: grid;
+            grid-template: repeat(5, 1fr) / 1fr 3fr 1fr;
+            grid-template-areas:
+            "alt rectangles aux"
+            "oil_press rectangles sat_comm"
+            "oil_temp rectangles acc"
+            "egt cruise radar"
+            "fuel cruise mp1";
+            gap: 80px 80px;
+        }
+        
+        section {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        /* Left and right columns */
+        .principal {
+            height: 50px;
+            width: 100px;
+            border-radius: 15px;
+        }
+        
+        .yellow { background-color: yellow; }
+        
+        .red { background-color: red; }
+        
+        .alt { grid-area: alt; }
+        
+        .oil_press { grid-area: oil_press; }
+        
+        .aux { grid-area: aux; }
+        
+        .sat_comm { grid-area: sat_comm; }
+        
+        .oil_temp { grid-area: oil_temp; }
+        
+        .egt { grid-area: egt; }
+        
+        .fuel { grid-area: fuel; }
+        
+        .acc { grid-area: acc; }
+        
+        .radar { grid-area: radar; }
+        
+        .mp1 { grid-area: mp1; }
+
+        /* Rectanges, center column */
+        .rectangles {
+            grid-area: rectangles;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 100px;
+            grid-template-areas: "column1 column2 column3";
+        }
+        
+        .column1 { grid-area: column1; }
+        
+        .column2 { grid-area: column2; }
+        
+        .column3 { grid-area: column3; }
+        
+        .rectangles__column {
+            height: 300px;
+            display: grid;
+            grid-template-rows: repeat(15, 1fr);
+        }
+        
+        .row {
+            width: 100px;
+            height: 300px;
+            background-color: brown;
+        }
+
+        /* Cruise, center column */
+        .cruise {
+            margin: auto;
+            grid-area: cruise;
+            height: 200px;
+            display: grid;
+            grid-template: repeat(3, 1fr) / 1fr 3fr;
+            column-gap: 100px;
+            grid-template-areas: "square1 normal-cruise" "square2 auto-cruise" "square3 pursuit";
+        }
+        
+        .square {
+            background-color: yellow;
+            height: 50px;
+            width: 30px;
+            border: 1px solid black;
+        }
+        
+        .square1 { grid-area: square1; }
+        
+        .square2 { grid-area: square2; }
+        
+        .square3 { grid-area: square3; }
+        
+        .normal_cruise {
+            background-color: rgb(55, 92, 14);
+            height: 50px;
+            width: 100px;
+            grid-area: normal-cruise;
+        }
+        
+        .auto_cruise {
+            background-color: rgb(13, 68, 11);
+            height: 50px;
+            width: 100px;
+            grid-area: auto-cruise
+        }
+        
+        .pursuit {
+            background-color: rgb(46, 7, 7);
+            height: 50px;
+            width: 100px;
+            grid-area: pursuit;
+        }
+    </style>
+</header>
+
+<body>
+    <section class="principal yellow alt">ALT</section>
+    <section class="principal yellow oil_press">OIL PRESS</section>
+    <section class="principal red oil_temp">OIL TEMP</section>
+    <section class="principal red egt">EGT</section>
+    <section class="principal red fuel">FUEL</section>
+    <section class="principal yellow aux">AUX</section>
+    <section class="principal yellow sat_comm">SAT COMM</section>
+    <section class="principal red acc">ACC</section>
+    <section class="principal red radar">RADAR</section>
+    <section class="principal red mp1">MP1</section>
+
+    <section class="rectangles">
+        <section class="rectangles__column column1">
+            <section class="row"></section>
+        </section>
+        <section class="rectangles__column column2">
+            <section class="row"></section>
+        </section>
+        <section class="rectangles__column column3">
+            <section class="row"></section>
+        </section>
+    </section>
+
+    <section class="cruise">
+        <section class="square square1"></section>
+        <section class="square square2"></section>
+        <section class="square square3"></section>
+        <section class="normal_cruise">NORMAL CRUISE</section>
+        <section class="auto_cruise">AUTO CRUISE</section>
+        <section class="pursuit">PURSUIT</section>
+    </section>
+</body>
+
+</html>
