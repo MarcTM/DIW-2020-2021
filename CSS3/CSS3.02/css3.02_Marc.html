@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS3.02 - MARC</title>
+	<style type="text/css">
+		article.interlocutores {
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid black;
+			width: 40%
+		}
+
+		.interlocutores a {
+			text-decoration: none;
+		}
+
+		.interlocutores a:visited {
+			color: blue;
+		}
+
+		.interlocutores a[href*="mailto"] {
+			margin-bottom: 20px;
+			display: block;
+		}
+
+		.interlocutores a[href*="mailto"]:before {
+			margin-right: 5px;
+			background-image: url('perfil.png');
+    		display: inline-block;
+    		background-size: 30px 20px;
+    		width: 30px; 
+    		height: 20px;
+    		content:"";
+    	}
+
+		article.archivos {
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid black;
+			width: 30%;
+		}
+
+		.archivos a {
+			display: block;
+			text-decoration: none;
+		}
+
+		.archivos a:visited {
+			color: blue;
+		}
+
+		a.pdf:after {
+			margin-left: 5px;
+			background-image: url('pdf.png');
+    		display: inline-block;
+    		background-size: 40px 25px;
+    		width: 40px; 
+    		height: 25px;
+    		content:"";
+    	}
+
+		a.zip:after {
+			margin-left: 5px;
+			background-image: url('zip.png');
+    		display: inline-block;
+    		background-size: 30px 25px;
+    		width: 30px; 
+    		height: 25px;
+    		content:"";
+		}
+	</style>
+</head>
+<body>
+
+<article class="interlocutores">
+	<h3>Los interlocutores a su servicio:</h3>
+	<a href="mailto:javierserranovega@director.com">Javier SERRANO VEGA: Director Comercial</a>
+	<a href="mailto:victoriaesperanzacastillo@jefa.com">Victoria ESPERANZA CASTILLO: Jefa de ventas</a>
+
+	<p>Para las reclamaciones, vaya a <a href="#">Problemas con el pedido</a></p>
+</article>
+
+<article class="archivos">
+	<p>Descargue todos nuestors archivos:</p>
+	<a class="pdf" href="#">El folleto de presentación (PDF)</a>
+	<a class="pdf" href="#">Los nuevos productos (PDF)</a>
+	<a class="pdf" href="#">Las ofertas promocionales (PDF)</a>
+	<a class="zip" href="#">Todos nuestros documentos (.zip)</a>
+</article>
+
+</body>
+</html>
