@@ -3,8 +3,69 @@
 <head>
 	<meta charset="utf-8">
 	<title>CSS03.4 - MARC</title>
+
+	<style type="text/css">
+		.ejemplo {
+			width: 15%;
+			margin: 30px 0px 0px 30px;
+			padding: 20px 0px 20px 5px;
+			border: 1px solid black;
+		}
+
+		li {
+			margin-bottom: 15px;
+		}
+
+		.ejemplo--1 ul li:nth-child(2) {
+			background-color: yellow;
+		}
+
+		.ejemplo--2 ul li:nth-child(odd) {
+			background-color: yellow;
+		}
+
+		.ejemplo--3 ul li:nth-child(3n) {
+			background-color: yellow;
+		}
+	</style>
 </head>
 <body>
+
+<section class="ejemplo ejemplo--1">
+	<ul>
+		<li>Rojo</li>
+		<li>Verde</li>
+		<li>Azu</li>
+		<li>Gris</li>
+		<li>Violeta</li>
+		<li>Amarillo</li>
+		<li>Negro</li>
+	</ul>
+</section>
+
+<section class="ejemplo ejemplo--2">
+	<ul>
+		<li>Rojo</li>
+		<li>Verde</li>
+		<li>Azu</li>
+		<li>Gris</li>
+		<li>Violeta</li>
+		<li>Amarillo</li>
+		<li>Negro</li>
+	</ul>
+</section>
+
+<section class="ejemplo ejemplo--3">
+	<ul>
+		<li>Rojo</li>
+		<li>Verde</li>
+		<li>Azu</li>
+		<li>Gris</li>
+		<li>Violeta</li>
+		<li>Amarillo</li>
+		<li>Negro</li>
+	</ul>
+</section>
 
 </body>
 </html>
