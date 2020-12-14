@@ -5,14 +5,30 @@
 	<title>CSS3.07 - MARC</title>
 
 	<style type="text/css">
-		body {
-			background-image: url('imagen1.jpg'), url('image2.jpg'), url('imagen3.jpg'), url('imagen4.jpg');
+		:root {
+			--background-size: 400px 325px;
+			--section-width: 800px;
+			--section-height: 650px;
+			--img1: url('imagen1.jpg');
+			--img2: url('imagen2.jpg');
+			--img3: url('imagen3.jpg');
+			--img4: url('imagen4.jpg');
+			--exercice-positions: left top, right top, left bottom, right bottom;
+		}
+
+
+		section {
+			width: var(--section-width);
+			height: var(--section-height);
+			background-image: var(--img1), var(--img2), var(--img3), var(--img4);
 			background-repeat: no-repeat;
-	        background-position: left top, right top, left bottom, right bottom;
+			background-size: var(--background-size);
+	        background-position: var(--exercice-positions);
 		}
 	</style>
 </head>
 
 <body>
+	<section></section>
 </body>
 </html>
