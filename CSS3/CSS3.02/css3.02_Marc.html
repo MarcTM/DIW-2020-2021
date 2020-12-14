@@ -4,10 +4,16 @@
 	<meta charset="utf-8">
 	<title>CSS3.02 - MARC</title>
 	<style type="text/css">
+		:root {
+			--default-border: 1px solid black;
+			--default-bg-size: 30px 20px;
+		}
+
+
 		article.interlocutores {
 			padding: 20px;
 			margin: 20px;
-			border: 1px solid black;
+			border: var(--default-border);
 			width: 40%
 		}
 
@@ -28,7 +34,8 @@
 			margin-right: 5px;
 			background-image: url('perfil.png');
     		display: inline-block;
-    		background-size: 30px 20px;
+    		background-size: var(--default-bg-size);
+    		background-repeat: no-repeat;
     		width: 30px; 
     		height: 20px;
     		content:"";
@@ -37,7 +44,7 @@
 		article.archivos {
 			padding: 20px;
 			margin: 20px;
-			border: 1px solid black;
+			border: var(--default-border);
 			width: 30%;
 		}
 
@@ -54,7 +61,8 @@
 			margin-left: 5px;
 			background-image: url('pdf.png');
     		display: inline-block;
-    		background-size: 40px 25px;
+    		background-size: var(--default-bg-size);
+    		background-repeat: no-repeat;
     		width: 40px; 
     		height: 25px;
     		content:"";
@@ -64,7 +72,8 @@
 			margin-left: 5px;
 			background-image: url('zip.png');
     		display: inline-block;
-    		background-size: 30px 25px;
+    		background-size: var(--default-bg-size);
+    		background-repeat: no-repeat;
     		width: 30px; 
     		height: 25px;
     		content:"";

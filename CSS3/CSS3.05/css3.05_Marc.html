@@ -6,15 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document CSS3</title>
   <style media="screen">
+  :root {
+    --box-border: 5px solid #ffaa00;
+    --container-border: 5px solid #7f7f7f;
+  }
+
 
   .divContainer {
     width:500px;
-    border:5px solid #7f7f7f;
+    border: var(--container-border);
   }
   .divBox {
     box-sizing: border-box;
     width:250px;
-    border:5px solid #ffaa00;
+    border: var(--box-border);
     padding:20px;
     float:left;
   }

@@ -4,43 +4,54 @@
   <meta charset="UTF-8">
   <title>box shadow :: CSS</title>
   <style media="screen">
+  :root {
+    --def-box-width: 400px;
+    --def-box-height: 100px;
+    --box-shadow-ej1: 10px 10px grey;
+    --box-shadow-ej2: 10px 8px 6px black;
+    --box-shadow-ej3: 3px 3px red, -8px 0px 6px 1px green;
+    --box-shadow-ej4: 1px 1px 10px 2px yellow;
+    --box-shadow-ej5: 3px 3px 30px yellow inset;
+  }
+
+
   div{
     color:white;
   }
   .caja{
     margin-left:40px;
-    width: 400px;
-    height: 100px;
+    width: var(--def-box-width);
+    height: var(--def-box-height);
     background-color: salmon;
-    box-shadow: 10px 10px grey;
+    box-shadow: var(--box-shadow-ej1);
   }
   .caja2{
     margin-left:40px;
-    width: 400px;
-    height: 100px;
+    width: var(--def-box-width);
+    height: var(--def-box-height);
     background-color: #AAA;
-    box-shadow: 10px 8px 6px black;
+    box-shadow: var(--box-shadow-ej2);
   }
   .caja3{
     margin-left:40px;
-    width: 400px;
-    height: 100px;
+    width: var(--def-box-width);
+    height: var(--def-box-height);
     background-color: #AAA;
-    box-shadow: 3px 3px red, -8px 0px 6px 1px green;
+    box-shadow: var(--box-shadow-ej3);
   }
   .caja4{
     margin-left:40px;
-    width: 400px;
-    height: 100px;
+    width: var(--def-box-width);
+    height: var(--def-box-height);
     background-color: #AAA;
-    box-shadow: 1px 1px 10px 2px yellow;
+    box-shadow: var(--box-shadow-ej4);
   }
   .caja5{
     margin-left:40px;
-    width: 400px;
-    height: 100px;
+    width: var(--def-box-width);
+    height: var(--def-box-height);
     background-color: #AAA;
-    box-shadow: 3px 3px 30px yellow inset;
+    box-shadow: var(--box-shadow-ej5);
     margin-bottom: 20px;
   }
   </style>

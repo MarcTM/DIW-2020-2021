@@ -5,10 +5,16 @@
 	<title>CSS3.03 - MARC</title>
 
 	<style type="text/css">
+		:root {
+			--default-border: 1px solid black;
+			--pretty-margin: 20px 0px 0px 40px;
+		}
+
+
 		section {
 			margin: 20px;
 			padding: 20px;
-			border: 1px solid black;
+			border: var(--default-border);
 			width: 30%;
 		}
 
@@ -22,7 +28,7 @@
 		}
 
 		article.articles {
-			margin: 20px 0px 0px 40px;
+			margin: var(--pretty-margin);
 		}
 
 		.articles p {

@@ -5,11 +5,16 @@
 	<title>CSS03.4 - MARC</title>
 
 	<style type="text/css">
+		:root {
+			--pretty-margin: 30px 0px 0px 30px;
+			--pretty-padding: 20px 0px 20px 5px;
+			--default-border: 1px solid black;
+		}
 		.ejemplo {
 			width: 15%;
-			margin: 30px 0px 0px 30px;
-			padding: 20px 0px 20px 5px;
-			border: 1px solid black;
+			margin: var(--pretty-margin);
+			padding: var(--pretty-padding);
+			border: var(--default-border);
 		}
 
 		li {
