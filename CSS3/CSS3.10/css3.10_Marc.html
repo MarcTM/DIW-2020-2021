@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <title>Transform CSS :: DIW - MARC</title>
   <style media="screen">
+  :root {
+  	 --default-w-h: 150px;
+  	 --def-transition: transform 0.5s ease;
+  }
+
   .animate {
       color: #fff;
       text-align: center;
-      height: 150px;
-      width: 150px;
+      height: var(--default-w-h);
+      width: var(--default-w-h);
       background-color: tomato;
       margin: 10px;
       float: left;
-      transition: transform 0.5s ease;
+      transition: var(--def-transition);
   }
 
   .rotate:hover { transform: rotate(40deg); }
