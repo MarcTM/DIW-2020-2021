@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transitions :: DIW</title>
+  <style media="screen">
+  :root {
+  	--default-width: 150px;
+  	--default-border-width: 10px;
+  	--transitions-common-seconds: 0.5s;
+  }
+
+  .box {
+      border-style: dotted;
+      border-width: var(--default-border-width);
+      display: block;
+      width: var(--default-width);
+      transition: font-size, font-style, width, border-style, padding, background-color var(--transitions-common-seconds), border-radius var(--transitions-common-seconds);
+   }
+
+  .box:hover {
+  	width: 200px;
+  	border-style: solid;
+  	border-radius: 15px;
+  	font-style: italic;
+  	font-size: 2em;
+  	padding: 10px;
+  	background-color: orange;
+   }
+  </style>
+</head>
+
+ <body>
+  <h1>Transitions</h1>
+  <span class="box">jomuoru TM</span>
+</body>
+</html>
