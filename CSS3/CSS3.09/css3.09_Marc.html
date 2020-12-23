@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS3.09 - MARC</title>
+	<style type="text/css">
+		:root {
+			--default-border-style: 1px solid black;
+			--def-px-separation: 50px;
+			--pretty-border-radius: 15px;
+			--text-margin: 25px;
+		}
+
+		@font-face {
+  			font-family: great-vibes;
+  			src: url(great-vibes/GreatVibes-Regular.otf);
+		}
+
+		.tipografias {
+			position: absolute;
+			top: var(--def-px-separation);
+			left: var(--def-px-separation);
+			padding: 20px;
+			border: var(--default-border-style);
+			border-radius: var(--pretty-border-radius);
+		}
+
+		.tipografias p {
+			margin-top: var(--text-margin);
+			margin-bottom: var(--text-margin);
+		}
+
+		.texto1 {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.texto2 {
+			font-family: Courier New;
+			font-style: italic;
+		}
+
+		.texto3 {
+			font-variant: small-caps;
+		}
+
+		.texto4 {
+			font-weight: bolder;
+		}
+
+		.texto5 {
+			font-stretch: condensed;
+		}
+
+		.texto6 {
+			font-size: xx-large;
+		}
+
+		.texto7 {
+			line-height: 90px;
+		}
+
+		.texto8 {
+			font-family: great-vibes;
+			font-size: 40px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<article class="tipografias">
+		<p class="texto1">font-family: Arial, Helvetica, sans-serif; | (Font-family puede tener varios nombres de fuentes, por si el navegador no soporta la primera, pasa a la siguiente.)</p>
+		<p class="texto2">font-family: Courier New | font-style: italic</p>
+		<p class="texto3">Font-variant: small-caps</p>
+		<p class="texto4">font-weight: bolder</p>
+		<p class="texto5">font-stretch: condensed</p>
+		<p class="texto6">font-size: xx-large</p>
+		<p class="texto7">line-height: 90px</p>
+		<p class="texto8">(Imported font) | font-family: great-vibes | font-size: 40px</p>
+	</article>
+
+
+</body>
+</html>

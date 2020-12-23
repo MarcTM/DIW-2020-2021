@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3.12 - MARC _ animations</title>
+	<style type="text/css">
+		@keyframes animation_first {
+  			0% {color: black;}
+  			35% {color: yellow;}
+  			70% {color: pink;}
+  			100% {color: black;}
+		}
+
+		body {
+			padding: 20px;
+		}
+
+		header {
+			font-weight: bold;
+			font-size: 1.5em;
+			margin-bottom: 20px;
+		}
+
+		.animation1 {
+			position: relative;
+			left: 40px;
+			top: 40px;
+			font-size: 2em;
+
+  			animation: animation_first 4s linear 1s infinite alternate-reverse;
+  			/*
+  			/  Igual que
+  			/
+			/  animation-name: animation_first;
+  			/  animation-duration: 4s;
+  			/  animation-timing-function: linear;
+  			/  animation-delay: 1s;
+  			/  animation-iteration-count: infinite;
+  			/  animation-direction: alternate-reverse;
+  			*/
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>ANIMATIONS CSS - MARC</header>
+	<main>
+		<span class="animation1">COLOORRR</span>
+	</main>
+
+</body>
+</html>
