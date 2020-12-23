@@ -3,11 +3,42 @@
 <head>
 	<title>CSS3.12 - MARC _ animations</title>
 	<style type="text/css">
-		@keyframes animation_first {
-  			0% {color: black;}
-  			35% {color: yellow;}
-  			70% {color: pink;}
-  			100% {color: black;}
+		:root {
+			--space-left: 40px;
+			--animation-properties: linear 0s infinite alternate-reverse;
+			--default-border: 1px solid black;
+		}
+
+		@keyframes animation_color {
+  			0% {
+  				color: black;
+  				font-size: 2em;
+  			}
+  			35% {
+  				color: yellow;
+  				font-size: 2.2em;
+  			}
+  			70% {
+  				color: pink;
+  				font-size: 2.4em;
+  			}
+  			100% {
+  				color: black;
+  				font-size: 2.2em;
+  			}
+		}
+
+		@keyframes animation_movement {
+			30% {
+				background-color: green;
+				left: 100px;
+			}
+
+			80% {
+				background-color: black;
+				left: 300px;
+			}
+  			
 		}
 
 		body {
@@ -20,20 +51,50 @@
 			margin-bottom: 20px;
 		}
 
+		main {
+			border: var(--default-border);
+			padding: 50px;
+			height: 300px;
+			width: 60%;
+		}
+
 		.animation1 {
 			position: relative;
-			left: 40px;
+			display: block;
+			left: var(--space-left);
 			top: 40px;
 			font-size: 2em;
 
-  			animation: animation_first 4s linear 1s infinite alternate-reverse;
+  			animation: animation_color 4s var(--animation-properties);
   			/*
   			/  Igual que
   			/
-			/  animation-name: animation_first;
+			/  animation-name: animation_color;
   			/  animation-duration: 4s;
   			/  animation-timing-function: linear;
-  			/  animation-delay: 1s;
+  			/  animation-delay: 0s;
+  			/  animation-iteration-count: infinite;
+  			/  animation-direction: alternate-reverse;
+  			*/
+		}
+
+		.animation2 {
+			position: relative;
+			display: block;
+			top: 100px;
+			left: var(--space-left);
+			height: 100px;
+			width: 100px;
+			border: var(--default-border);
+
+			animation: animation_movement 2s var(--animation-properties);
+			/*
+  			/  Igual que
+  			/
+			/  animation-name: animation_movement;
+  			/  animation-duration: 2s;
+  			/  animation-timing-function: linear;
+  			/  animation-delay: 0s;
   			/  animation-iteration-count: infinite;
   			/  animation-direction: alternate-reverse;
   			*/
@@ -46,6 +107,7 @@
 	<header>ANIMATIONS CSS - MARC</header>
 	<main>
 		<span class="animation1">COLOORRR</span>
+		<span class="animation2"></span>
 	</main>
 
 </body>
