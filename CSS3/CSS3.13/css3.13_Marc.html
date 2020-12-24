@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clip-path :: DIW</title>
+  <meta name="viewport" content="width=device-width">
+  <style>
+  	:root {
+  		--orange-border: 1px solid orange;
+  		--all-width: 100%;
+  		--all-height: 100vh;
+  	}
+
+  	body {
+  		display: flex;
+  		flex-direction: row;
+  		width: var(--all-width);
+  		height: var(--all-height);
+  		justify-content: space-around;
+  		align-items: center;
+  	}
+
+    div {
+    	border: var(--orange-border);
+        width:auto;
+    }
+
+    .clip-css {
+  		clip-path: polygon(100% 0%, 0% 0%, 0% 100%);
+	}
+
+    .clip-css2 {
+  		clip-path: circle(50%);
+	}
+
+	.clip-css3 {
+  		clip-path: ellipse(30% 45% at 50% 50%);
+	}
+
+	.clip-css4 {
+  		clip-path: inset(12%);
+	}
+
+  </style>
+</head>
+<body>
+   <div class="first">
+    <img src="http://diw.jomuoru.xyz/images/clip-demo.jpg" class="clip-css" width="140" height="140">
+ </div>
+<div>
+    <img src="http://diw.jomuoru.xyz/images/clip-demo.jpg" class="clip-css2" width="140" height="140">
+  </div>
+<div>
+    <img src="http://diw.jomuoru.xyz/images/clip-demo.jpg" class="clip-css3" width="140" height="140">
+ </div>
+<div>
+    <img src="http://diw.jomuoru.xyz/images/clip-demo.jpg" class="clip-css4" width="140" height="140">
+</div>
+</body>
+
+</html>
