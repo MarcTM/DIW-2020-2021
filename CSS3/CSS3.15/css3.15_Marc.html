@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Filters</title>
+
+  <style type="text/css">
+  	:root {
+  		--image-margin: 10px 0px 10px 0px;
+  		--def-width: 200px;
+  		--def-height: 200px;
+  		--negrita: bold;
+  		--animation: 2s linear 1s infinite alternate;
+  	}
+
+	/* GENERAL */	
+
+  	img {
+  		margin: var(--image-margin);
+  		display: block;
+  		width: var(--def-width);
+  		height: var(--def-height);
+  	}
+
+  	li {
+  		margin-bottom: 20px;
+  	}
+
+  	span {
+  		font-weight: var(--negrita);
+  	}
+
+
+  	/* IMAGES */
+
+	@keyframes invert {
+	  from {filter: invert(0%);}
+
+	  to {filter: invert(100%);}
+	}
+
+	@keyframes contrast {
+	  from {filter: contrast(100%);}
+
+	  to {filter: contrast(200%);}
+	}
+
+	@keyframes invert {
+	  from {filter: invert(0%);}
+
+	  to {filter: invert(100%);}
+	}
+
+  	.primera {
+  		animation: var(--animation) invert;
+  	}
+
+  	.segunda {
+  		filter: drop-shadow(5px 6px 5px green);
+  		transition: margin-left 1s;
+  	}
+
+  	.segunda:hover {
+  		margin-left: 100px;
+	}
+
+  	.tercera {
+  		animation: var(--animation) contrast;
+  	}
+
+  	.cuarta {
+  		filter: brightness(20%);
+  		transition: margin-top 1s;
+  	}
+
+  	.cuarta:hover {
+  		margin-top: 100px;
+	}
+
+  	.quinta {
+  		filter: sepia(70%);
+  		transition: width 1s, height 1s;
+  	}
+
+  	.quinta:hover {
+  		width: calc(var(--def-width) + 50px);
+  		height: calc(var(--def-height) + 50px);
+  	}
+
+  	.sexta {
+  		filter: saturate(150%);
+  	}
+
+  	.septima {
+  		filter: grayscale(100%);
+  	}
+
+  	.octava {
+  		filter: hue-rotate(90deg);
+  	}
+
+  	.novena {
+  		filter: opacity(40%);
+  	}
+
+  	.decima {
+  		filter: blur(3px);
+  	}
+
+  </style>
+</head>
+
+
+<body>
+
+	<ul>
+	  <li><span>filter: invert</span> <img class="primera" src="css3.15b.jpg" alt=""></li>
+	  <li><span>filter: drop-shadow</span> <img class="segunda" src="css3.15b.jpg" alt=""></li>
+	  <li><span>filter: contrast</span> <img class="tercera" src="css3.15c.jpg" alt=""></li>
+	  <li><span>filter: brightness</span> <img class="cuarta" src="css3.15d.jpg" alt=""></li>
+	  <li><span>filter: sepia</span> <img class="quinta" src="css3.15e.jpg" alt=""></li> 
+	  <li><span>filter: saturate</span> <img class="sexta" src="css3.15b.jpg" alt=""></li>
+	  <li><span>filter: greyscale</span> <img class="septima" src="css3.15b.jpg" alt=""></li>
+	  <li><span>filter: hue-rotate</span> <img class="octava" src="css3.15c.jpg" alt=""></li>
+	  <li><span>filter: opacity</span> <img class="novena" src="css3.15d.jpg" alt=""></li>
+	  <li><span>filter: blur</span> <img class="decima" src="css3.15e.jpg" alt=""></li>  
+	</ul>
+
+</body>
+</html>
