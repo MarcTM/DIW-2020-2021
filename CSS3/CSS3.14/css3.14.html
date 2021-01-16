@@ -5,35 +5,33 @@
   <title>mask :: DIW</title>
   <style>
 
-	@supports(-webkit-mask-image: url(#mask)) or (mask-image: url(#mask)) {
-	}
-
 	div {
-	  display: block;
+	  display: inline-block;
 	  margin: 30px;
 	  max-width: 100%;
 	}
 
 	.mascara-0 {
-  		mask-image: url("image.svg");
-		mask-size: 80%;
-		-webkit-mask-image: url("image.svg");
-		-webkit-mask-size: 80%;
+  		mask: url(https://raw.githubusercontent.com/MarcTM/DIW_2020-2021/88349e8b3b14b095eb07017d6eeb55fb0f3b6d5b/CSS3/CSS3.14/images/image.svg) left / 50% repeat-x;
 	}
 
 	
 	.mascara-1 {
-  		-webkit-mask-image: url(image.svg);
-  		mask-image: url(image.svg);
+  		mask: url(https://raw.githubusercontent.com/MarcTM/DIW_2020-2021/88349e8b3b14b095eb07017d6eeb55fb0f3b6d5b/CSS3/CSS3.14/images/image.svg) center / cover no-repeat;
 	}
 
 	.mascara-2 {
+		mask: url(https://raw.githubusercontent.com/MarcTM/DIW_2020-2021/88349e8b3b14b095eb07017d6eeb55fb0f3b6d5b/CSS3/CSS3.14/images/image.svg) top / 50% repeat-y;
 	}
 
 	.mascara-3 {
+		mask: url(https://raw.githubusercontent.com/MarcTM/DIW_2020-2021/88349e8b3b14b095eb07017d6eeb55fb0f3b6d5b/CSS3/CSS3.14/images/image.svg) top / 35% repeat repeat;
 	}
 
 	.mascara-4 {
+		mask: url(https://raw.githubusercontent.com/MarcTM/DIW_2020-2021/88349e8b3b14b095eb07017d6eeb55fb0f3b6d5b/CSS3/CSS3.14/images/image.svg) bottom / 150px no-repeat,
+			url(https://raw.githubusercontent.com/MarcTM/DIW_2020-2021/88349e8b3b14b095eb07017d6eeb55fb0f3b6d5b/CSS3/CSS3.14/images/image.svg) top / 250px no-repeat
+
 	}
 
   </style>
