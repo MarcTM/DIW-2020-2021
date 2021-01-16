@@ -5,31 +5,35 @@
   <title>mask :: DIW</title>
   <style>
 
-	div{
-	  display:inline-block;
-	  margin:30px;
+	@supports(-webkit-mask-image: url(#mask)) or (mask-image: url(#mask)) {
 	}
 
-	.mascara-0{
-  		 mask-image: url("image.svg");
-		  mask-repeat: no-repeat;
-		  mask-size: 80%;
-		  -webkit-mask-image: url("image.svg");
-		  -webkit-mask-repeat: no-repeat;
-		  -webkit-mask-size: 80%;
+	div {
+	  display: block;
+	  margin: 30px;
+	  max-width: 100%;
 	}
 
-	.mascara-1{
-	 
+	.mascara-0 {
+  		mask-image: url("image.svg");
+		mask-size: 80%;
+		-webkit-mask-image: url("image.svg");
+		-webkit-mask-size: 80%;
 	}
 
-	.mascara-2{
+	
+	.mascara-1 {
+  		-webkit-mask-image: url(image.svg);
+  		mask-image: url(image.svg);
 	}
 
-	.mascara-3{
+	.mascara-2 {
 	}
 
-	.mascara-4{
+	.mascara-3 {
+	}
+
+	.mascara-4 {
 	}
 
   </style>
