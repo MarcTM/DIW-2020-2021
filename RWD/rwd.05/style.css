@@ -17,6 +17,10 @@ body {
 	padding: 5px;
 }
 
+a, a:visited, a:active {
+	text-decoration: none;
+}
+
 img {
 	width: 100px;
 	height: 100px;
@@ -67,7 +71,7 @@ footer {
 	.container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-	  	grid-template-rows: 100px 100px 500px 100px 60px;
+	  	grid-template-rows: 80px 50px 500px 50px 50px;
 	  	grid-gap: 10px;
 	  	grid-template-areas: 
 	    "header header"
@@ -93,6 +97,15 @@ footer {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
+		align-items: center;
+	}
+
+	nav a:hover {
+		background-color: yellow;
+	}
+
+	aside {
+		display: flex;
 		align-items: center;
 	}
 
