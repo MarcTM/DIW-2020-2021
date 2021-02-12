@@ -1,0 +1,19 @@
+div#primero .destacado {
+  color: #FF8000;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 6px; }
+
+div#segundo .destacado {
+  color: #2E5F64;
+  font-size: 1.4rem;
+  padding: 5px;
+  text-decoration: underline; }
+
+div {
+  padding: 20px; }
+
+div#parrafos {
+  text-align: right; }
+
+/*# sourceMappingURL=style.css.map */
