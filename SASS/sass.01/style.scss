@@ -15,6 +15,10 @@ div#segundo .destacado {
     text-decoration: underline;
 }
 
+p:not(.destacado) {
+    font-style: italic;
+}
+
 div {
     padding: 20px;
 }
