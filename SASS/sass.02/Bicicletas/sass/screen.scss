@@ -1,0 +1,30 @@
+$color_texto: #eee;
+$color_texto_hover: #fff;
+$color_fondo: #666;
+$color_fondo_hover: #888;
+
+@mixin color-texto-fondo {
+    color: $color_texto;
+    background-color: $color_fondo;
+}
+
+@mixin color-texto-fondo-hover {
+    color: $color_texto_hover;
+    background-color: $color_fondo_hover;
+}
+
+@mixin tamaño-caja($valor) {
+    box-sizing: $valor;
+}
+
+@mixin transiciones($propiedad, $duracion, $timing: linear) {
+    transition-property: $propiedad;
+    transition-duration: $duracion;
+    transition-timing-function: $timing;
+}
+
+@mixin animaciones($nombre, $duracion, $timing: linear) {
+    animation-name: $nombre;
+    animation-duration: $duracion;
+    animation-timing-function: $timing;
+}
