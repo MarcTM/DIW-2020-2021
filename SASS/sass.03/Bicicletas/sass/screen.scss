@@ -1,0 +1,9 @@
+$color_texto: #eee;
+// $color_texto_hover: #fff;
+$color_fondo: #15a;
+// $color_fondo_hover: #888;
+$color_texto_hover: lighten($color_texto, 10%);
+$color_fondo_hover: lighten($colo_fondo, 10%);
+$color_titulo: darken($color_fondo, 10%);
+
+@import '_menu.scss';
