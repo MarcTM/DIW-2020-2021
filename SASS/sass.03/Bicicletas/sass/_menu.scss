@@ -1,32 +1,3 @@
-@import "screen.scss";
-
-@keyframes iluminar {
-    from {
-      background-color: $color_fondo;
-      color: $color_texto;
-    }
-    to {
-      background-color: $color_fondo_hover;
-      color: $color_texto_hover;
-    }
-}
-
-  
-body {
-    padding: 0px;
-    margin: 0px;
-}
-
-header {
-    padding: 12px 30px;
-    font-size: 1.8em;
-    color: #444;
-    background-color: $color_texto;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #aaa;
-    font-family: Georgia, "Times New Roman", Times, serif;
-}
-
 nav {
     position: absolute;
     width: 100%;
@@ -35,19 +6,54 @@ nav {
     ul {
         list-style-type: none;
         padding: 0px;
-        margin: 0px;
+        margin: 0px;   
     }
 
     > ul {
         width: 100%;
         height: 32px;
-        color: $color_texto;
-        background-color: $color_fondo;
+        color: #eee;
+        background-color: #15a;
+    }
+
+    li {
+        &.categoria {
+            float: left;
+
+            > a {
+                -moz-transition: padding 0.4s ease-out;
+                -webkit-transition: padding 0.4s ease-out;
+                transition: padding 0.4s ease-out;
+            }
+
+            &:hover {
+                > a {
+                    padding: 10px 20px;
+                }
+
+                ul {
+                    &.submenu {
+                        height: 100px;
+                    }
+                }
+            }
+
+            ul {
+                &.submenu {
+                    -moz-transition: height 0.5s ease-out;
+                    -webkit-transition: height 0.5s ease-out;
+                    transition: height 0.5s ease-out;
+                    position: absolute;
+                    height: 0px;
+                    overflow: hidden;
+                }
+            }
+        }
     }
 
     a {
-        color: $color_texto;
-        background-color: $color_fondo;
+        color: #eee;
+        background-color: #15a;
         text-decoration: none;
         width: 160px;
         padding: 7px 20px;
@@ -56,57 +62,15 @@ nav {
         cursor: pointer;
 
         &:hover {
-            color: #fff;
-            background-color: #888;
+            color: white;
+            background-color: #166cd8;
             -moz-animation: iluminar 0.4s linear;
             -webkit-animation: iluminar 0.4s linear;
-            @include animaciones(iluminar, 0.4s);
+            animation: iluminar 0.4s linear;
         }
     }
-}
 
-ul {
-    &.submenu {
-        -moz-transition: height 0.5s ease-out;
-        -webkit-transition: height 0.5s ease-out;
-        @include transiciones(height, 0.5s, ease-out);
-        position: absolute;
-        height: 0px;
-        overflow: hidden;
+    @include responsive("medium") {
+        display: none;
     }
-}
-
-li {
-    &.categoria {
-        float: left;
-
-        > a {
-            -moz-transition: padding 0.4s ease-out;
-            -webkit-transition: padding 0.4s ease-out;
-            @include transiciones(padding, 0.4s, ease-out);
-        }
-
-        &:hover {
-            > a {
-                padding: 10px 20px;
-            }
-
-            ul {
-                &.submenu {
-                    height: 100px;
-                }
-            }
-        }
-    }
-}
-  
-footer {
-    @include color-texto-fondo;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    @include tamaño-caja(border-box);
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    padding: 5px;
 }

@@ -1,9 +1,49 @@
 $color_texto: #eee;
-// $color_texto_hover: #fff;
 $color_fondo: #15a;
-// $color_fondo_hover: #888;
 $color_texto_hover: lighten($color_texto, 10%);
-$color_fondo_hover: lighten($colo_fondo, 10%);
+$color_fondo_hover: lighten($color_fondo, 10%);
 $color_titulo: darken($color_fondo, 10%);
 
+@import '_mixin.scss';
+
+
+@keyframes iluminar {
+    from {
+      background-color: $color_fondo;
+      color: $color_texto;
+    }
+    to {
+      background-color: $color_fondo_hover;
+      color: $color_texto_hover;
+    }
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 12px 30px;
+    font-size: 1.8em;
+    color: #444;
+    background-color: $color_texto;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer {
+    @include color-texto-fondo;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    @include tamaño-caja(border-box);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
+}
+
+
 @import '_menu.scss';
+@import '_contenido.scss';
