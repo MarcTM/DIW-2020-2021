@@ -1,6 +1,6 @@
 @keyframes iluminar {
   from {
-    background-color: #15a;
+    background-color: #138;
     color: #eee; }
   to {
     background-color: #166cd8;
@@ -20,7 +20,7 @@ header {
 
 footer {
   color: #eee;
-  background-color: #15a;
+  background-color: #138;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -29,37 +29,37 @@ footer {
   bottom: 0px;
   padding: 5px; }
 
-nav {
+nav#desktop {
   position: absolute;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif; }
-  nav ul {
+  nav#desktop ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px; }
-  nav > ul {
+  nav#desktop > ul {
     width: 100%;
     height: 32px;
     color: #eee;
     background-color: #15a; }
-  nav li.categoria {
+  nav#desktop li.categoria {
     float: left; }
-    nav li.categoria > a {
+    nav#desktop li.categoria > a {
       -moz-transition: padding 0.4s ease-out;
       -webkit-transition: padding 0.4s ease-out;
       transition: padding 0.4s ease-out; }
-    nav li.categoria:hover > a {
+    nav#desktop li.categoria:hover > a {
       padding: 10px 20px; }
-    nav li.categoria:hover ul.submenu {
+    nav#desktop li.categoria:hover ul.submenu {
       height: 100px; }
-    nav li.categoria ul.submenu {
+    nav#desktop li.categoria ul.submenu {
       -moz-transition: height 0.5s ease-out;
       -webkit-transition: height 0.5s ease-out;
       transition: height 0.5s ease-out;
       position: absolute;
       height: 0px;
       overflow: hidden; }
-  nav a {
+  nav#desktop a {
     color: #eee;
     background-color: #15a;
     text-decoration: none;
@@ -68,15 +68,48 @@ nav {
     display: block;
     text-align: center;
     cursor: pointer; }
-    nav a:hover {
+    nav#desktop a:hover {
       color: white;
       background-color: #166cd8;
       -moz-animation: iluminar 0.4s linear;
       -webkit-animation: iluminar 0.4s linear;
       animation: iluminar 0.4s linear; }
   @media (max-width: 1024px) {
-    nav {
+    nav#desktop {
       display: none; } }
+nav#mobile {
+  display: none;
+  float: right; }
+  @media (max-width: 1024px) {
+    nav#mobile {
+      display: block; } }
+  nav#mobile ul {
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
+    list-style-type: none;
+    position: absolute;
+    right: 10px;
+    top: 40px; }
+    nav#mobile ul a {
+      color: #eee;
+      background-color: #138;
+      text-decoration: none;
+      width: 160px;
+      padding: 7px 20px;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      font-size: 0.6em;
+      font-weight: normal; }
+      nav#mobile ul a:hover {
+        color: white;
+        background-color: #1744b5;
+        -moz-animation: iluminar 0.4s linear;
+        -webkit-animation: iluminar 0.4s linear;
+        animation: iluminar 0.4s linear; }
+  nav#mobile:hover ul {
+    height: auto; }
 
 #contenido .col-left .login button {
   box-sizing: border-box;
@@ -107,6 +140,9 @@ nav {
       #contenido .col-left {
         float: none;
         width: 100%; } }
+    #contenido .col-left .login button {
+      background-color: #1c55e3;
+      color: #eee; }
   #contenido .col-right {
     box-sizing: border-box;
     margin-left: 30%;
@@ -124,5 +160,17 @@ nav {
     color: white; }
     #contenido .button-action:hover {
       background-color: #3686eb; }
+
+.example {
+  background-color: icon-menu, "../images/menu.png", 0px 0px, 30px, 32px 0; }
+
+.example {
+  background-color: icon-news, "../images/news.png", 0px -90px, 30px, 39px 0; }
+
+.example {
+  background-color: icon-money, "../images/money.png", 0px -100px, 50px, 54px 0; }
+
+.example {
+  background-color: icon-contact, "../images/contact.png", 0px 0px, 30px, 30px 0; }
 
 /*# sourceMappingURL=screen.css.map */

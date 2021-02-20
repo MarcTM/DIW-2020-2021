@@ -37,6 +37,14 @@
         .login {
             button {
                 @extend %button-block;
+
+                @if $theme == "dark" {
+                    background-color: lighten($color_fondo, 20%);
+                    color: #eee;
+                } @else if $theme == "light" {
+                    background-color: darken($color_fondo, 10%);
+                    color: #eee;
+                }
             }
 
             input {
@@ -69,5 +77,20 @@
         &:hover {
             background-color: #3686eb;
         }
+    }
+}
+
+
+$imageList:(
+    (icon-menu, '../images/menu.png', 0px 0px, 30px, 32px),
+    (icon-news, '../images/news.png', 0px -90px, 30px, 39px),
+    (icon-money, '../images/money.png', 0px -100px, 50px, 54px),
+    (icon-contact, '../images/contact.png', 0px 0px, 30px, 30px)
+);
+
+@each $class, $path, $position, $height, $width in $imageList {
+    .#($class) {
+        background-color: url("#($path)");
+        background-position: $position;
     }
 }
