@@ -161,16 +161,28 @@ nav#mobile {
     #contenido .button-action:hover {
       background-color: #3686eb; }
 
-.example {
-  background-color: icon-menu, "../images/menu.png", 0px 0px, 30px, 32px 0; }
+.icon-menu {
+  background-image: url("../images/menu.png");
+  background-position: 0px 0px;
+  height: 30px;
+  width: 32px; }
 
-.example {
-  background-color: icon-news, "../images/news.png", 0px -90px, 30px, 39px 0; }
+.icon-news {
+  background-image: url("../images/news.png");
+  background-position: 0px -90px;
+  height: 30px;
+  width: 39px; }
 
-.example {
-  background-color: icon-money, "../images/money.png", 0px -100px, 50px, 54px 0; }
+.icon-money {
+  background-image: url("../images/money.png");
+  background-position: 0px -100px;
+  height: 50px;
+  width: 54px; }
 
-.example {
-  background-color: icon-contact, "../images/contact.png", 0px 0px, 30px, 30px 0; }
+.icon-contact {
+  background-image: url("../images/contact.png");
+  background-position: 0px 0px;
+  height: 30px;
+  width: 30px; }
 
 /*# sourceMappingURL=screen.css.map */

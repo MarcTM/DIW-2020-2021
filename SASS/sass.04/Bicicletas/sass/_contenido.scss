@@ -81,16 +81,18 @@
 }
 
 
-$imageList:(
-    (icon-menu, '../images/menu.png', 0px 0px, 30px, 32px),
-    (icon-news, '../images/news.png', 0px -90px, 30px, 39px),
-    (icon-money, '../images/money.png', 0px -100px, 50px, 54px),
-    (icon-contact, '../images/contact.png', 0px 0px, 30px, 30px)
+$imageList: (
+    (icon-menu, "../images/menu.png", 0px, 0px, 30px, 32px),
+    (icon-news, "../images/news.png", 0px, -90px, 30px, 39px),
+    (icon-money, "../images/money.png", 0px, -100px, 50px, 54px),
+    (icon-contact, "../images/contact.png", 0px, 0px, 30px, 30px)
 );
 
-@each $class, $path, $position, $height, $width in $imageList {
-    .#($class) {
-        background-color: url("#($path)");
-        background-position: $position;
+@each $classname, $path, $position-x, $position-y, $height, $width in $imageList {
+    .#{$classname} {
+      background-image: url("#{$path}");
+      background-position: $position-x $position-y;
+      height: $height;
+      width: $width;
     }
 }
