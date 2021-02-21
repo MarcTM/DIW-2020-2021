@@ -144,7 +144,7 @@ i {
 }
 
 .icon-menu {
-  background-image: url("../images/menu.png");
+  background-image: url("./images/menu.png");
   background-position: 0px 0px;
   height: 30px;
   width: 32px;

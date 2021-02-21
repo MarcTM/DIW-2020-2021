@@ -3,7 +3,7 @@ $color_fondo: #15a;
 $color_texto_hover: lighten($color_texto, 10%);
 $color_fondo_hover: lighten($color_fondo, 10%);
 $color_titulo: darken($color_fondo, 10%);
-$theme: "dark";
+$theme: "light";
 @if $theme == "dark" {
   $color_fondo: #138;
 } @else if $theme == "light" {
